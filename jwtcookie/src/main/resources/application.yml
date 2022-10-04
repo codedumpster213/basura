@@ -1,0 +1,23 @@
+server:
+ port: 9100
+spring:
+ datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/jwtdb
+  username: root
+  password: root
+  
+ jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    properties:
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQL5Dialect
+     
+sample:
+  app:
+    jwtExpirationMs: '86400000'
+    jwtSecret: sekreyKey123
+ 
+  
